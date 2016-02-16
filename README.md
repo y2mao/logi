@@ -12,6 +12,12 @@ logi.Errorf("api", "%s failed. %v", "/user/profile", errors.New("Invalid ID"))
 logi.FlushAll()
 ```
 
+Generated files as following:
+```
+20160216.api.log
+20160216.http.log
+```
+
 #### Options
 logi enables user change options with command argument like  `./yourapp --logi-<opt>`. Following are valid option.
 
