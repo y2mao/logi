@@ -9,6 +9,8 @@ logi.Infof("http", "listening port:%d", 18801)
 logi.Error("api", "undefined API")
 logi.Errorf("api", "%s failed. %v", "/user/profile", errors.New("Invalid ID"))
 
+// Log will be flushed to disk automatically (depends on interval seconds or buffer size).
+// If necessary, Call this method to flush data from buffer to disk directly. 
 logi.FlushAll()
 ```
 
