@@ -23,8 +23,8 @@ logi enables user change options with command argument like  `./yourapp --logi-<
 
 | Command | Default Value |  Description |
 | --- | --- | --- |
-| --logi-dir | ./logs  | the directory where the log be written to |
+| --logi-dir | ./logs | the directory where the log be written to |
 | --logi-quiet | false | diable console output. Please turn it on in production env |
-| --logi-rolling | 20060102  | rolling format. Please refer to standard RFC time format |
-| --logi-bufsize | 1024*1024*4  | max buffer size for caching log |
-| --logi-interval | 15  | flush interval(sec) |
+| --logi-rolling | 20060102 | rolling format. Please refer to standard RFC time format |
+| --logi-bufsize | 4Mbytes | max buffer size for caching log |
+| --logi-interval | 15 | flush interval(sec) |
