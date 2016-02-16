@@ -1,4 +1,4 @@
-package txlog
+package logi
 
 import "flag"
 
