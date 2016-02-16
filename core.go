@@ -56,7 +56,7 @@ func writeLog(name string, prefix string, s string) {
 	lg.buffer(buf)
 }
 
-// Copy from "log" package
+// Folk from "log" package
 func formatHeader(buf *[]byte, t time.Time) {
 	// ignore
 	// *buf = append(*buf, l.prefix...)
@@ -79,7 +79,7 @@ func formatHeader(buf *[]byte, t time.Time) {
 	*buf = append(*buf, ' ')
 }
 
-// Copy from "log" package
+// Folk from "log" package
 // Cheap integer to fixed-width decimal ASCII.  Give a negative width to avoid zero-padding.
 func itoa(buf *[]byte, i int, wid int) {
 	// Assemble decimal in reverse order.
