@@ -27,6 +27,6 @@ logi enables user change options with command argument like  `./yourapp --logi-<
 | --- | --- | --- |
 | --logi-dir | ./logs | the directory where the log be written to |
 | --logi-quiet | false | diable console output. Please turn it on in production env |
-| --logi-rolling | 20060102 | rolling format. Please refer to standard RFC time format |
+| --logi-rolling | 20060102 | rolling format. Please refer to Golang time format |
 | --logi-bufsize | 4194304 | max buffer size for caching log. default size is 4Mbytes |
 | --logi-interval | 15 | flush interval(sec) |
