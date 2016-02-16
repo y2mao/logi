@@ -19,7 +19,7 @@ Generated files as following:
 ```
 
 #### Options
-logi enables user change options with command argument like  `./yourapp --logi-<opt>`. Following are valid option.
+logi enables user change options with command argument like  `./yourapp --logi-<opt>`. Following are valid options.
 
 | Command | Default Value |  Description |
 | --- | --- | --- |
