@@ -9,19 +9,12 @@ var (
 	loggerMap = make(map[string]*txLogger)
 
 	flushTicker *time.Ticker
-	tickerQuit  = make(chan struct{})
 )
 
 func flushTimely() {
-	for {
-		select {
-		case <-flushTicker.C:
-			logf("flushTimely:%d", len(loggerMap))
-			FlushAll()
-		case <-tickerQuit:
-			flushTicker.Stop()
-			return
-		}
+	for t := range flushTicker.C {
+		t.String()
+		FlushAll()
 	}
 }
 
