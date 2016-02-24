@@ -2,6 +2,7 @@ package logi
 
 import (
 	"os"
+	"strings"
 	"time"
 )
 
@@ -34,7 +35,9 @@ func writeLog(name string, prefix string, s string) {
 	buf = buf[:0]
 	formatHeader(&buf, now)
 	buf = append(buf, prefix...)
-	buf = append(buf, s...)
+
+	//  remove newline char and write content
+	buf = append(buf, strings.Replace(s, "\n", "\\n", -1)...)
 
 	if len(s) == 0 || s[len(s)-1] != '\n' {
 		buf = append(buf, '\n')
